@@ -1,38 +1,153 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(162, 232, 232);
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: flex-start;
 }
 
-.App-link {
-  color: #61dafb;
+.pattern {
+  width: 100vw;
+  height: 30vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.image {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 10px;
+}
+.user {
+  width: 80%;
+  height: 18%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 10px;
+  z-index: 1000;
+}
+
+.head {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.interface {
+  width: 80%;
+  height: 25%;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+}
+
+.input {
+  width: 55%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.click {
+  background-color: black;
+  border-radius: 5px;
+  width: 5%;
+  height: 100%;
+}
+
+.new {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.conditions {
+  width: 80%;
+  height: 20%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: white;
+  z-index: 1000;
+  border-radius: 20px;
+  position: absolute;
+  top: 150px;
+}
+
+.address {
+  width: 20%;
+  height: 100%;
+}
+
+.style {
+  font-size: 15px;
+  font-weight: 600;
+  color: grey;
+}
+
+.number {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.location {
+  width: 100vw;
+  height: 70vh;
+  min-height: 70%;
+}
+
+@media(max-width:600px){
+  .App{
+    width: 100vw;
+    height: 100vh;
   }
-  to {
-    transform: rotate(360deg);
+
+  .user{
+    width: 100%;
+  }
+
+  .head{
+    font-size: 20px;
+  }
+
+  .interface{
+    width: 100%;
+    height: 20%;
+  }
+
+  .input{
+    width: 65%;
+  }
+
+  .click{
+    width: 10%;
+    border-radius: 9px;
+  }
+  
+  .conditions{
+    width: 80%;
+    height: 40%;
+    flex-direction: column;
+    top: 120px;
+  }
+
+  .address{
+    width: 90%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .number{
+    font-size: 15px;
+    text-align: center;
   }
 }
